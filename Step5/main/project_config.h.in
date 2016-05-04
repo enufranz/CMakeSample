@@ -1,0 +1,2 @@
+#define CMakeSample_VERSION @CMakeSample_VERSION@
+#cmakedefine USE_SUM_STUB

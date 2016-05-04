@@ -1,0 +1,9 @@
+CMAKE_MINIMUM_REQUIRED (VERSION 2.6)
+
+set(SUM_SOURCES src/sum.cpp)
+if (USE_SUM_STUB)
+	set(SUM_SOURCES src/sum_stub.cpp)
+endif ()
+
+INCLUDE_DIRECTORIES (include)
+ADD_LIBRARY (sum STATIC ${SUM_SOURCES})

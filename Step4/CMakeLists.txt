@@ -1,0 +1,10 @@
+CMAKE_MINIMUM_REQUIRED (VERSION 2.6)
+IF(POLICY CMP0048)
+	CMAKE_POLICY(SET CMP0048 OLD)
+ENDIF(POLICY CMP0048)
+
+PROJECT (CMakeSample)
+SET (CMakeSample_VERSION 2.71)
+
+add_subdirectory (main)
+add_subdirectory (sum)
